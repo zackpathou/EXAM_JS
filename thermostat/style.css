@@ -1,0 +1,27 @@
+body {
+  background: #b197fc;
+  background: linear-gradient(to right, #d0bfff, #9775fa);
+  color: #7950f2;
+  font-family: "Saira Condensed";
+}
+.thermostat {
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.thermostat .temperature {
+  font-size: 100px;
+  font-weight: 600;
+  text-align: center;
+}
+.thermostat .temperature span::selection {
+  background: transparent;
+}
+.thermostat .control {
+  font-size: 32px;
+  text-align: center;
+}
+.thermostat .control i:hover {
+  cursor: pointer;
+}
