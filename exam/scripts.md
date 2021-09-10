@@ -3,19 +3,18 @@
 ### Palindrome
 > Créer une fonction `palindrome(word)` qui vérifie si un mot est un palindrome et retourne un `boolean`. Si `word` n'est pas un string  retourner le texte `Merci de mettre une string valable`
 ```js
-function palindrome(word) {
-  if (typeof(word)!='string')
-  {return"Merci de mettre une string valable"}
-  for(let i=0; i<word.length;i++)
-  {
-      const start = word.charAt(i);
-      const end = word.charAt(word.length-i-1);
-      if(start!=end)
-      {
-          return false;
-      }
-  }
-  return true;
+ if (typeof(word)!='string')
+{return"Merci de mettre une string valable"}
+for(let i=0; i<word.length;i++)
+{
+ const start = word.charAt(i); 
+ const end = word.charAt(word.length-i-1);
+ if(start!=end)
+ {
+  return false;
+ }
+}
+return true;
 }
 console.log(palindrome('kayak')) // true
 console.log(palindrome('noname')) // false
